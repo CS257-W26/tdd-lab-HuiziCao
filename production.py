@@ -2,8 +2,10 @@
 A file for the production code
 '''
 
+import sys
+
 def reverse_word(word):
-    pass
+    return word[::-1]
 
 def reverse_all_words(phrase):
-    pass
+    return " ".join(reverse_word(w) for w in phrase.split())
